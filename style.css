@@ -216,3 +216,17 @@ ol, ul {
 	font-size: 9px;
 	margin-bottom: 3px;
 }
+
+/* accordion */
+.accordion-header {
+	display: block;
+	cursor: pointer;
+}
+.accordion-content {
+	display: none;
+}
+
+.accordion-content.active {
+	display: block;
+	transition-duration: .5s;
+}

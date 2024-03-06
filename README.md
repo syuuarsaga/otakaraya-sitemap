@@ -26,3 +26,16 @@
     </ul>
 </li>
 ```
+
+## アコーディオン
+クラス名を追加する
+```html
+<li class="accordion-item">
+    <a class="accordion-header">カテゴリ名</a>
+    <ul class="accordion-content">
+        <li><a href="https://www.otakaraya.jp/xxx/xxx/">子ページ</a></li>
+        <li><a href="https://www.otakaraya.jp/xxx/xxx/">子ページ</a></li>
+        <li><a href="https://www.otakaraya.jp/xxx/xxx/">子ページ</a></li>
+    </ul>
+</li>
+```
