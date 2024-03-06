@@ -1,0 +1,2 @@
+# otakaraya-sitemap
+おたからやサイトマップ
