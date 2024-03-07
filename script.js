@@ -31,3 +31,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
+const goldParent = document.getElementById("goldParent");
+const goldUlElements = goldParent.querySelectorAll("ul");
+const goldTotalCount = 0;
+
+const dignityCount = document.getElementById("dignityList").childElementCount;
+const soubaCount = document.getElementById("soubaList").childElementCount;
+const kinkaCount = document.getElementById("kinkaList").childElementCount;
+
+goldUlElements.forEach((ul) => {
+  goldTotalCount += ul.querySelectorAll("li").length;
+});
+goldParent.previousElementSibling.insertAdjacentHTML("afterend", `<span>：${goldTotalCount}</span>`);
+
+document.querySelector('li > a').insertAdjacentHTML('afterend', `<span>：${dignityCount}</span>`);
+document.querySelector('li > a').insertAdjacentHTML('afterend', `<span>：${soubaCount}</span>`);
+document.querySelector('li > a').insertAdjacentHTML('afterend', `<span>：${kinkaCount}</span>`);
